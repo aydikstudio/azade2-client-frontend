@@ -2,10 +2,10 @@ import Link from "next/link";
 import { Search } from "lucide-react";
 import Image from "next/image";
 const navItems = [
-  { label: "Кольца", href: "/catalog/rings" },
-  { label: "Серьги", href: "/catalog/earrings" },
-  { label: "Браслеты", href: "/catalog/bracelets" },
-  { label: "Цепи", href: "/catalog/chains" },
+  { label: "Кольца", href: "/catalog/" },
+  { label: "Серьги", href: "/catalog" },
+  { label: "Браслеты", href: "/catalog" },
+  { label: "Цепи", href: "/catalog" },
 ];
 
 export function Header() {
@@ -21,11 +21,8 @@ export function Header() {
             src="/images/logo.png"
             alt="AZADE"
             width={120}
-            height={40}
-            priority
-            unoptimized
-            className="h-18 object-contain"
-            style={{ width: "auto" }}
+            height={60}
+            className="animate-[logoIntro_1.4s_ease-out_forwards]"
           />
         </Link>
 
@@ -39,14 +36,14 @@ export function Header() {
       </div>
 
       <nav
-        className="mx-auto py-8 flex max-w-7xl items-center justify-center gap-8 overflow-x-auto border-t border-stone-100 px-4 py-3 text-sm font-medium text-stone-700 sm:px-6 lg:px-8"
+        className="mx-auto py-8  flex max-w-7xl items-center justify-center gap-8 overflow-x-auto border-t border-stone-100 px-4 py-3 text-sm font-medium text-stone-700 sm:px-6 lg:px-8"
         aria-label="Основное меню"
       >
         {navItems.map((item) => (
           <Link
             key={item.href}
             href={item.href}
-            className="shrink-0 transition-colors hover:text-stone-950"
+            className="font-manrope shrink-0 transition-colors hover:text-stone-950"
           >
             {item.label}
           </Link>
