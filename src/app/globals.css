@@ -5,6 +5,10 @@
   --foreground: #171717;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme {
   --font-manrope: var(--font-manrope);
   --font-playfair: var(--font-playfair);
@@ -29,6 +33,16 @@
   }
   100% {
     transform: translateX(200%);
+  }
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 

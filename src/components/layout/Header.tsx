@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Search } from "lucide-react";
 import Image from "next/image";
 const navItems = [
-  { label: "Кольца", href: "/catalog/" },
+  { label: "Кольца", href: "/catalog/rings" },
   { label: "Серьги", href: "/catalog" },
   { label: "Браслеты", href: "/catalog" },
   { label: "Цепи", href: "/catalog" },
